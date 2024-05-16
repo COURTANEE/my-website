@@ -1,97 +1,172 @@
-/* UNIVERSAL SELECTOR is * if you want to replace it with body */
+/* UNIVERSAL styles */
 
 body {
-    /* RGB: 0 - 255, 0 - 100% */
-    /* Hexadecimal */
     color: rgb(1, 88, 88);
     font-size: 1.25em;
 }
-/*TYPE SELECTOR*/
-ul {
+
+ul,li {
     color:#000000; 
 }
-li {
-    color: #000000
-}
+
 p {
     color: #8b0000; 
 }
 
-h2{ 
-    /* 2 PROPERTIES THAT STYLE FONT */
+h2 { 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-variant: inherit;
 }
-/*relative units of measure  */ 
+ 
  p { 
     line-height: 2em; 
     font-size: 2em;
     font: italic 100 1em Lucida Sans; 
    }
 
-/* ID SELECTOR */
+
 #git_header {
     color:rgb(255, 218, 171)
 }
 
-/* CLASS SELECTOR */
+
 .first_text {
     color: rgb(146, 14, 14);
     font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
     font-size:  2em; 
+    text-align: center; /*Added alignment */
 }
 
 footer {
-    float: center; 
+    text-align: center; /* Adjusted alignment */
     color:hsl(0, 8%, 97%);
 }
 
-/*RELATIONAL/ COMBINATION SELECTOR(s) */
+
+/*Additional CSS for the second page */
+
+body {
+    color: rgb(1, 88, 88);
+    font-size: 1.25em;
+}
+
+ul, li {
+    color: #000000;
+}
+
+p {
+    color: #8b0000;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-variant: inherit;
+}
+
+p {
+    line-height: 2em;
+    font-size: 2em;
+    font: italic 100 1em Lucida Sans;
+}
+
+#git_header {
+    color: rgb(255, 218, 171);
+}
+
+.first_text {
+    color: rgb(146, 14, 14);
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    font-size: 2em;
+    text-align: center; /* Added alignment */
+}
+
+footer {
+    text-align: center; /* Adjusted alignment */
+    color: hsl(0, 8%, 97%);
+}
+
 section#activities>ul {
     color: #a52a2a;
 }
 
 section#entry_note>p {
-    color: rgb(146, 14, 14); 
-    background:url("images/PNW3.jpg") top right;
-
-
+    color: rgb(146, 14, 14);
+    background: url("images/PNW3.jpg") top right;
 }
 
 section#activities a:hover {
     font-size: 100%;
 }
 
-/* ATTRIBUTE SELECTOR */
-a[href]{
+a[href] {
     font-size: 2em;
     font-weight: bolder;
 }
+
 body {
     height: 800px;
     background: url("images/PNW3.jpg") top right;
 }
 
-#destinations {
+#destinations,
+#activities,
+#top_priority_list {
     background: url("images/PNW3.jpg") top right;
     border: 0.5em double #f5f5f5;
-    margin: 0.5em; 
+    margin: 0.5em;
     padding: 0.5em 0.25em;
-      
 }
-#activities {
-    background: url("images/PNW3.jpg") top right;
-    border: 0.5em double #f5f5f5;
-    margin: 0.5em; 
-    padding: 0.5em 0.25em;
+
+.first_text {
+    text-align: center;
+}
+
+/* Additional CSS for the second page */
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    overflow: hidden; 
+}
+
+.left-column,
+.center-column,
+.right-column {
+    float: left;
+    width: calc(33.33% - 20px); 
+    margin-right: 20px;
+}
+
+.left-column:nth-child(3n+1),
+.center-column:nth-child(3n+1),
+.right-column:nth-child(3n+1) {
+    clear: left;
+}
+
+.left-column,
+.center-column,
+.right-column {
+    padding: 20px;
+    background-color: #f5f5f5; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+@media only screen and (max-width: 768px) {
+    .left-column,
+    .center-column,
+    .right-column {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; 
+        clear: none; 
+    }
 }
 #top_priority_list {
     background: linear-gradient(180deg, #ffffff 0%, #add8e6, rgb(134, 134, 208) 100%);
     border:  0.5em double #f5f5f5;
     margin: 0.5em; 
     padding: 0.5em 0.25em ;
-}
-.first_text {
-    text-align: center; 
 }
