@@ -38,8 +38,8 @@ main {
     width: 100%;
     max-width: 600px;
     height: auto;
-    border: 3px solid #ddd; /* Adding a border */
-    padding: 10px; /* Adding padding */
+    border: 3px solid #ddd; 
+    padding: 10px; 
     margin: 10px auto; /* Centering the image */
 }
 
@@ -96,9 +96,9 @@ main ul li::before {
 .grid-item img {
     width: 100%;
     height: auto;
-    border: 2px solid #ddd; /* Adding a border to the images */
-    border-radius: 4px; /* Adding some rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+    border: 2px solid #ddd; /* Add a border to the images */
+    border-radius: 4px; /* Add some rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
 /* Responsive grid layout */
@@ -108,7 +108,7 @@ main ul li::before {
     }
 }
 
-/* Add margin and padding to elements to make them look aesthetically pleasing */
+/* Add margin and padding to elements  */
 main h2 {
     margin-top: 20px;
     margin-bottom: 10px;
