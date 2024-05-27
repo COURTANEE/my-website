@@ -14,17 +14,19 @@ header {
 }
 
 /* Navigation menu styles */
-nav ul {
+nav ul.nav-menu {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Use flexbox for the navigation menu */
+    justify-content: center;
+    flex-wrap: wrap; /* Allow the items to wrap onto new lines if necessary */
 }
 
-nav ul li {
-    display: inline;
+nav ul.nav-menu li {
     margin-right: 20px;
 }
 
-nav ul li.current-page a {
+nav ul.nav-menu li.current-page a {
     color: #008080;
 }
 
@@ -38,8 +40,8 @@ main {
     width: 100%;
     max-width: 600px;
     height: auto;
-    border: 3px solid #ddd; 
-    padding: 10px; 
+    border: 3px solid #ddd;
+    padding: 10px;
     margin: 10px auto; /* Centering the image */
 }
 
@@ -51,34 +53,7 @@ main {
     color: #ffffff;
 }
 
-/* Media queries for responsiveness */
-@media only screen and (max-width: 760px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-}
-
-/* Contact page styles */
-main ul {
-    list-style-type: none;
-}
-
-/* Style list items with stars */
-main ul li::before {
-    content: '\2605';
-    display: inline-block;
-    width: 1em;
-    margin-right: 0.5em;
-}
-
-/* Additional styles for grid layout */
+/* Grid layout styles for gallery */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -101,14 +76,26 @@ main ul li::before {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
-/* Responsive grid layout */
+/* Media queries for responsiveness */
 @media only screen and (max-width: 760px) {
+    nav ul.nav-menu li {
+        margin-right: 10px;
+    }
     .grid-container {
         grid-template-columns: 1fr;
     }
 }
 
-/* Add margin and padding to elements  */
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    nav ul.nav-menu {
+        flex-direction: column;
+    }
+}
+
+/* Additional styles for content spacing */
 main h2 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -121,4 +108,17 @@ main p, main ul {
 footer p {
     margin: 0;
     padding: 10px;
+}
+
+/* Contact page styles */
+main ul {
+    list-style-type: none;
+}
+
+/* Style list items with stars */
+main ul li::before {
+    content: '\2605';
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
 }
