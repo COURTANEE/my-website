@@ -4,33 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Flower Season</title>
+    <!-- External CSS and GOOGLE Fonts -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <!-- Favicon -->
+     <link rel="icon" href="images/x-icon.jpg" type="image/jpg">
 </head>
 <body>
     <header>
-        <h1>Contact Flower Season</h1>
+        
+        <!-- Header with navigation -->
+        <h1>Contact Flower Season <i class="fas fa-seedling"></i></h1>
         <nav>
-            <!-- Flex container for navigation menu -->
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="current-page"><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="https://www.nps.gov/mora/planyourvisit/wildflower-status.htm" target="_blank">Information</a></li>
-                <li><a href="#placeholder">Placeholder</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-info-circle"></i> About</a></li>
+                <li class="current-page"><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+                <li><a href="https://www.nps.gov/mora/planyourvisit/wildflower-status.htm" target="_blank"><i class="fa-solid fa-info"></i> Information</a></li>
             </ul>
         </nav>
     </header>
     <main>
+          <!-- Main content section -->
         <h2>Contact Us</h2>
         <p>Have questions or feedback? Reach out to us:</p>
         <ul>
             <li>Mail: 55210 238th Avenue East, Ashford, WA 98304</li>
             <li>Phone: 360 569-2211</li>
         </ul>
+         <!-- Contact form -->
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
     </main>
     <footer class="footer">
-        <p>&copy; 2024 Flower Season</p>
+        <!-- Footer section -->
+        <p>&copy; 2024 Flowers INC</p>
     </footer>
 </body>
 </html>

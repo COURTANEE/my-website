@@ -1,9 +1,9 @@
 /* Global styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Adding a gradient background */
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
 /* Header styles */
@@ -13,21 +13,29 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-size: 2.5em;
+}
 /* Navigation menu styles */
 nav ul.nav-menu {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Use flexbox for the navigation menu */
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow the items to wrap onto new lines if necessary */
+    flex-wrap: wrap;
 }
 
+/* Navigation menu item styles */
 nav ul.nav-menu li {
     margin-right: 20px;
 }
-
+/* Current page navigation link color */
 nav ul.nav-menu li.current-page a {
     color: #008080;
+}
+
+nav ul.nav-menu li a {
+    font-size: 1.2em;
 }
 
 /* Main content styles */
@@ -35,90 +43,205 @@ main {
     padding: 20px;
     text-align: center;
 }
-
+/* Heading styles */
+main h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* Paragraph and list styles */
+main p, main ul {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+/* Link styles */
+main a {
+    color: #008080;
+    text-decoration: none;
+}
+/* Link hover styles */
+main a:hover {
+    text-decoration: underline;
+}
+/* Scalable image styles */
 .scalable-image {
     width: 100%;
     max-width: 600px;
     height: auto;
     border: 3px solid #ddd;
     padding: 10px;
-    margin: 10px auto; /* Centering the image */
+    margin: 20px auto;
 }
+/* Facts container styles */
+.facts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Fact box styles */
+.fact-box {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+/* Fact box image styles */
+.fact-box img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Fact box image styling */
+.fact-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Ensure all images fit within this size */
+}
+
+/* Background image section styles */
+.background-image-section {
+    background-image: url('images/flowers11.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+     /* Add the following styles to center the background image */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
 
 /* Footer styles */
 .footer {
     background-color: #483d8b;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     color: #ffffff;
 }
 
-/* Grid layout styles for gallery */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 20px;
-}
-
-.grid-item {
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ddd; /* Add a border to the images */
-    border-radius: 4px; /* Add some rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-}
-
-/* Media queries for responsiveness */
-@media only screen and (max-width: 760px) {
-    nav ul.nav-menu li {
-        margin-right: 10px;
-    }
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-    nav ul.nav-menu {
-        flex-direction: column;
-    }
-}
-
-/* Additional styles for content spacing */
-main h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-main p, main ul {
-    margin-bottom: 20px;
-}
-
 footer p {
+    font-size: 1.2em;
     margin: 0;
     padding: 10px;
 }
 
-/* Contact page styles */
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1024px) {
+     /* Styles for smaller screens */
+    nav ul.nav-menu li {
+        margin-right: 10px;
+    }
+
+    .facts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fact-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller tablets and mobile devices */
+    nav ul.nav-menu li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add margin-bottom for better spacing */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+     /* Styles for even smaller screens */
+    header {
+        padding: 10px;
+    }
+
+    nav ul.nav-menu {
+        flex-direction: column;
+    }
+
+    nav ul.nav-menu li {
+        margin-right: 0;
+    }
+}
+
+/* Additional styles for content spacing */
 main ul {
     list-style-type: none;
 }
 
-/* Style list items with stars */
 main ul li::before {
-    content: '\2605';
+    content: '\2605'; /* Add star symbol before list item */
     display: inline-block;
     width: 1em;
     margin-right: 0.5em;
+}
+
+/* Font Awesome icon styles */
+.fa-seedling {
+    color: rgba(252, 119, 10, 0.925);   /* Set color for seedling icon */
+}
+
+.fa-house, .fa-info-circle, .fa-envelope, .fa-images, .fa-info, .fa-asterisk {
+    margin-right: 5px; /* Add margin between icon and text */
+}
+
+/* Gallery specific styles */
+/* Grid container for the gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+/* Gallery item styles */
+.gallery-item {
+    flex: 0 0 auto;
+    margin: 10px;
+}
+
+/* Gallery image styles */
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border: 3px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Additional styles for styled table */
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Helvetica', sans-serif; /* Use Helvetica font for table content */
+}
+
+.styled-table th {
+    background-color: rgb(240, 122, 25); /* Green background for table header */
+    color: white;
+}
+
+/* Additional styles for homepage */
+header h1 {
+    font-family: 'Lucida Handwriting', sans-serif; /* Apply Lucida Handwriting font to homepage heading */
+}
+
+
+main p {
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font to homepage text */
 }

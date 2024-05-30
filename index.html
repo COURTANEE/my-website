@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags and title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Season</title>
+
+    <!-- Link to CSS and GOOGLE fonts -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/x-icon.jpg" type="image/jpg">
 </head>
 <body>
     <header>
-        <h1>Flower Season at Mt. Rainier</h1>
+        <h1>Flower Season at Mt. Rainier <i class="fas fa-seedling"></i></h1>
         <nav>
-            <!-- Flex container for navigation menu -->
+            <!-- Navigation menu using flexbox -->
             <ul class="nav-menu">
-                <li class="current-page"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="https://www.nps.gov/mora/planyourvisit/wildflower-status.htm" target="_blank">Information</a></li>
-                <li><a href="#placeholder">Placeholder</a></li>
+                <li class="current-page"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+                <li><a href="https://www.nps.gov/mora/planyourvisit/wildflower-status.htm" target="_blank"><i class="fa-solid fa-info"></i> Information</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Main content of the homepage -->
         <h2>Welcome to The Pacific Northwest Flower Season!</h2>
-        <p>Explore the enchanting world of flowers</p>
+        <p class="special-font">Explore the enchanting world of flowers</p>
         <img src="images/flowers.jpg" alt="Colorful flowers" class="scalable-image">
         <p id="placeholder">Explore a place filled with vibrant colors and fragrant blooms. Discover the beauty of Mt. Rainier in one of its most charming seasons!</p>
+        <p id="activities">Discover the various wildflowers the Pacific Northwest has to offer <a href="https://www.pnwflowers.com/" target="_blank">here</a>.</p>
+        <img src="images/flowers7.jpg" alt="Another beautiful flower" class="scalable-image">
+        <div class="facts-container">
+            <!-- Fact boxes using flexbox -->
+            <div class="fact-box">
+                <img src="images/flowers8.jpg" alt="White Trillium" class="fact-image">
+                <p><strong>White Trillium:</strong> The White Trillium is a three-petaled flower commonly found in woodlands, blooming in early spring.</p>
+            </div>
+            <div class="fact-box">
+                <img src="images/flowers9.jpg" alt="Rhododendron" class="fact-image">
+                <p><strong>Rhododendron:</strong> Rhododendrons are known for their large clusters of bright pink or purple flowers, thriving in acidic soils.</p>
+            </div>
+            <div class="fact-box">
+                <img src="images/flowers10.jpg" alt="Tiger Lily" class="fact-image">
+                <p><strong>Tiger Lily:</strong> Tiger Lilies are easily recognizable by their bright orange flowers with black spots, blooming in mid to late summer.</p>
+            </div>
+        </div>
     </main>
     <footer class="footer">
-        <p>&copy; 2024 Flower Season</p>
+        <!-- Footer content -->
+        <p>&copy; 2024 Flowers INC</p>
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
