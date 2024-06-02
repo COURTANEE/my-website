@@ -1,0 +1,26 @@
+Peer Feedback:
+1. This may just be personal preference, but I feel that the bottom of the page looks empty, especially with the copyright being so high up on the page. I was thinking that it could look good with the copyright at the bottom, which would also make more space for the images and descriptive texts.
+
+Response:
+To address this feedback, I modified the CSS to adjust the `margin-top` property for the footer. This moves the copyright to the bottom of the page, filling the previously empty space.
+
+Code change:
+styles.css:
+.footer {
+    background-color: #483d8b;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: auto; /* Ensure the footer sticks to the bottom */
+}
+
+2. The navigation menu items could have more space between them for better readability on larger screens.
+
+Response:
+I added more spacing between the navigation menu items to improve readability on larger screens by adjusting the `margin-right` property.
+
+Code change:
+styles.css:
+nav ul.nav-menu li {
+    margin-right: 30px; /* Increased margin for better spacing */
+}
