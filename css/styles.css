@@ -8,7 +8,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #87cefa;
+    background-color: #87cefa; 
     padding: 20px;
     text-align: center;
 }
@@ -215,6 +215,7 @@ header h1 {
 }
 
 main p {
+<<<<<<< HEAD:css/styles.css
     font-family: 'Playfair Display', serif;
 }
 
@@ -285,3 +286,7 @@ main {
         padding: 5px;
     }
 }
+=======
+    font-family: 'Playfair Display', serif; /* Apply Playfair Display font to homepage text */
+}
+>>>>>>> adeec286695c1744673398f150d1b505191a309a:styles.css
