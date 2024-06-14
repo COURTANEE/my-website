@@ -1,0 +1,287 @@
+/* Global styles */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+/* Header styles */
+header {
+    background-color: #87cefa;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #000000;
+    ;
+}
+
+/* Navigation menu styles */
+nav ul.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Remove default list styles */
+}
+
+nav ul.nav-menu li {
+    margin-right: 20px;
+}
+
+nav ul.nav-menu li.current-page a {
+    color: #008080;
+    /* Color for current page link */
+}
+
+nav ul.nav-menu li a {
+    color: #00008B;
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    /* Heading */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+main p,
+main ul {
+    font-size: 1.5em;
+    /* Paragraph and list font size */
+    margin-bottom: 20px;
+    /* Bottom margin for paragraphs and lists */
+    color: #000000;
+}
+
+main a {
+    color: hsl(249, 84%, 51%);
+    text-decoration: none;
+    /* Remove default underline */
+}
+
+main a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Scalable image styles */
+.scalable-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 3px solid #ddd;
+    padding: 10px;
+    margin: 20px auto;
+    /* Center horizontally with top and bottom margin */
+}
+
+/* Facts container styles */
+.facts-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.fact-box {
+    background-color: #f0f0f0;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    /* Include border in width calculation */
+}
+
+.fact-box img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #483d8b;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Additional styles for content spacing */
+main ul {
+    list-style-type: none;
+}
+
+main ul li::before {
+    content: '\1F33A';
+    /* Flower symbol before list item */
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+/* Font Awesome icon styles */
+.fa-seedling {
+    color: rgba(252, 119, 10, 0.925);
+    /* Seedling icon color */
+}
+
+.fa-house,
+.fa-info-circle,
+.fa-envelope,
+.fa-images,
+.fa-info,
+.fa-asterisk {
+    margin-right: 5px;
+}
+
+/* Gallery specific styles */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Responsive grid columns */
+    gap: 1rem;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    /* No flex grow or shrink */
+    margin: 10px;/
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    border: 3px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Additional styles for styled table */
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px;/
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.styled-table th {
+    background-color: rgb(240, 122, 25);
+    color: #000000;
+    ;
+}
+
+/* Additional styles for homepage */
+header h1 {
+    font-family: 'Lucida Handwriting', sans-serif;
+}
+
+main p {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Ensure footer sticks to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+    /* Footer sticks to bottom */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1024px) {
+    nav ul.nav-menu li {
+        margin-right: 15px;
+        /* Adjusted margin for smaller screens */
+    }
+
+    .facts-container {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+    }
+
+    .fact-box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul.nav-menu {
+        flex-direction: column;
+        /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav ul.nav-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        /* Add margin-bottom for better spacing */
+    }
+
+    nav ul.nav-menu li a i {
+        display: none;
+        /* Hide icons on smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+    nav ul.nav-menu li {
+        margin-right: 0;
+    }
+}
+
+/* Larger Homescreen Images */
+@media only screen and (max-width: 640px) {
+    .scalable-image {
+        width: 100%;
+        padding: 5px;
+    }
+}
