@@ -16,7 +16,6 @@ header {
 header h1 {
     font-size: 2.5em;
     color: #000000;
-    ;
 }
 
 /* Navigation menu styles */
@@ -153,14 +152,6 @@ main ul li::before {
     /* Seedling icon color */
 }
 
-.fa-house,
-.fa-info-circle,
-.fa-envelope,
-.fa-images,
-.fa-info,
-.fa-asterisk {
-    margin-right: 5px;
-}
 
 /* Gallery specific styles */
 .gallery-container {
@@ -218,6 +209,24 @@ main p {
     font-family: 'Playfair Display', serif;
 }
 
+/* Social Media Icons Styles */
+.social-media-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media-icons a {
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.social-media-icons a:hover {
+    color: #87cefa;
+}
+
 /* Ensure footer sticks to the bottom */
 body {
     display: flex;
@@ -263,11 +272,6 @@ main {
         margin-right: 0;
         margin-bottom: 10px;
         /* Add margin-bottom for better spacing */
-    }
-
-    nav ul.nav-menu li a i {
-        display: none;
-        /* Hide icons on smaller screens */
     }
 }
 
